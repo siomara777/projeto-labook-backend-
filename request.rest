@@ -1,0 +1,69 @@
+
+
+####
+GET http://localhost:3003/users
+
+
+####
+POST http://localhost:3003/users/signup
+
+
+{
+  "name": "Beltradddna",
+  "email": "beltradddna@email.com",
+  "password": "belddddtrana00"
+}
+
+###
+POST http://localhost:3003/users/login
+
+{
+  "email": "beltrana@email.com",
+  "password": "beltrana00"
+}
+
+
+
+
+###
+GET http://localhost:3003/posts
+###
+
+POST http://localhost:3003/posts
+Content-Type: application/json
+
+{
+
+    "id": "p008",
+    "creator_id": "u002",
+    "content": "Conteúdo do post 8",
+    "likes": 1,
+    "dislikes": 1,
+    "created_at": "2023-11-16T09:00:0.000Z",
+    "updated_at": "2023-11-16T09:00:0.000Z"
+}
+
+####
+PUT http://localhost:3003/posts/p008
+Content-Type: application/json
+
+{
+
+ "content": "Conteúdo do 7744448888 "
+
+}
+
+
+###
+DELETE http://localhost:3003/posts/p008
+Content-Type: application/json
+
+####
+PUT http://localhost:3003/posts/p002/like
+Content-Type: application/json
+
+{
+  "like": true
+  
+}
+
